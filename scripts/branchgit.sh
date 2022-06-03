@@ -24,3 +24,6 @@ else
     git checkout -b $BN
     git push --set-upstream origin $BN
 fi
+
+## Tips
+# List all current Git Branches: git branch --list
