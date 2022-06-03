@@ -1,6 +1,6 @@
 /**
  * Here are some functions to be shared among 
- * the other files in src/views
+ * the other files in src/views/*
  */
 
 export function makeParagraph(text: string) {
@@ -34,11 +34,20 @@ export function makeList(list_items: string[], ordered = false) {
     return list;
 }
 
-export function renderView(view: HTMLElement) {
-    const wrapper = clearMainWrapper();
-    wrapper?.appendChild(view);
+export function renderView(view: Function) {
+    const content = view();
+    clearMainWrapper()?.appendChild(content);
 }
 
+/**
+ * This function gets the "section-content" part of the
+ * index.html and clears it out by removing all its 
+ * children (Although, currently it should have only 1
+ * child at a given moment, we'll keep it this way in 
+ * case this changes in the future or some bug occurs)
+ * 
+ * @returns an empty wrapper
+ */
 function clearMainWrapper() {
     const wrapper = document.getElementById("section-content");
     wrapper?.childNodes.forEach((childNode) => {

@@ -8,9 +8,9 @@ type NavItem = [label: string, viewFn: Function];
 
 const NAV_ITEMS: NavItem[] = [
   ["Home", makeHomeView],
-  ["About this site", makeAboutSiteView],
+  ["About This Site", makeAboutSiteView],
   ["About Matthew", makeAboutMWGView],
-  ["Technology used", makeTechUsedView],
+  ["Technology Used", makeTechUsedView],
 ];
 
 export function makeNavView() {
@@ -29,7 +29,10 @@ function makeNavLink(label: string, viewFn: Function) {
 
     link.textContent = label;
     link.addEventListener("click", handleNavClick(viewFn));
-    link.setAttribute("style", "padding: 2px; text-decoration: underline;");
+    link.setAttribute("style", 
+    "padding: 7px; " + 
+    "text-decoration: underline; " + 
+    "color:#0000ff");
 
     return link;
 }
@@ -37,6 +40,6 @@ function makeNavLink(label: string, viewFn: Function) {
 function handleNavClick(viewFn: Function) {
     return function (event: MouseEvent) {
         event.preventDefault();
-        renderView(viewFn());
+        renderView(viewFn);
     };
 }

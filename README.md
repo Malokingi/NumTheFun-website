@@ -6,6 +6,7 @@ In this project I'm going to get some practice in for using TS and Python before
 ## Current Plan
 - [ ] Make NumTheFun interactable-with on a web page:
   - [x] Use Typescript to get a basic website running using the VSCode Extention, Live Server
+    - [x] Make the site into a SPA
   - [ ] Recreate my NumTheFun program in Python
 
 ## How to run

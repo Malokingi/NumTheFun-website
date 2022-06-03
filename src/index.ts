@@ -7,8 +7,7 @@ function init() {
   const navView = makeNavView();
   navSection?.appendChild(navView);
 
-  const homeView = makeHomeView();
-  renderView(homeView);
+  renderView(makeHomeView);
 }
 
 init();
