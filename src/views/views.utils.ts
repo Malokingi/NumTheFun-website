@@ -55,3 +55,14 @@ function clearMainWrapper() {
     });
     return wrapper;
 }
+
+export function addNTF() {
+    const div = document.createElement('div');
+
+    div.appendChild(makeParagraph("Note to Matthew: Add App Here"))
+    div.setAttribute("style", 
+    "padding: 15px; " +
+    "border-style: double;");
+
+    return div;
+}
