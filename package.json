@@ -1,0 +1,23 @@
+{
+  "name": "numthefun-website",
+  "version": "0.0.0",
+  "description": "Practicing TypeScript and Python",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Malokingi/NumTheFun-website.git"
+  },
+  "author": "Matthew Garvey",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Malokingi/NumTheFun-website/issues"
+  },
+  "homepage": "https://github.com/Malokingi/NumTheFun-website#readme",
+  "devDependencies": {
+    "tsc": "^2.0.4",
+    "typescript": "^4.7.2"
+  }
+}
