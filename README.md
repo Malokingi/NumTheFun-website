@@ -8,7 +8,7 @@ In this project I'm going to get some practice in for using TS and Python before
   - [ ] Recreate my NumTheFun program in Python
 
 ## How to run
-,,,
+```
 npm run build
 // open dist/index.html in borwser (or right-click the file and select "Open with Live Server")
-,,,
+```
