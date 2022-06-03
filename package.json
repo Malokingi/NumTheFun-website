@@ -4,7 +4,7 @@
   "description": "Practicing TypeScript and Python",
   "main": "src/index.ts",
   "scripts": {
-    "build": "tsc && npm run build:cp-public",
+    "build": "clear && tsc && npm run build:cp-public",
     "build:cp-public": "cp ./public/** ./dist",
     "type": "tsc --noEmit"
   },
