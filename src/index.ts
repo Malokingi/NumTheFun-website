@@ -1,5 +1,8 @@
-// function helloWorld() {
-//     document.getElementById('hello-world').textContent = 'Hello, World!'
-// }
+function helloWorld() {
+    const element= document.getElementById("hello-world");
+    if (element) {
+        element.textContent = 'Hello, World!!!';
+    }
+}
 
-// helloWorld();
+helloWorld();

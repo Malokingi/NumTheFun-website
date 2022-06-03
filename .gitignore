@@ -139,3 +139,6 @@ dmypy.json
 *.log
 logs
 npm-debug.log*
+
+# Other
+scratch
